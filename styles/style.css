@@ -142,11 +142,6 @@
 
     /*Section*/
 
-    section {
-
-
-    }
-
     section h2>span {
         font-size: .7em;
         font-weight: 200;
@@ -155,10 +150,10 @@
 
 
     .photos {
-        width: 1200px;
+
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     /*thumbnails*/
@@ -167,13 +162,22 @@
         height: 12.500em;
         width: 16.250em;
         margin: 0 1.250em 2.7em 0;
-        display: flex;
+        display: block;
         flex-direction: column;
     }
 
     .thumbnails img {
         height: 11.250em;
         width: 16.250em;
+    }
+
+    .thumbnails iframe {
+        height: 11.250em;
+        width: 16.250em;
+    }
+
+    .thumbnails a {
+        color: #9eb8ac;
     }
 
 /*STATE*/

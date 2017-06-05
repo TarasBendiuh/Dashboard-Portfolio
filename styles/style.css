@@ -116,18 +116,16 @@
 
     /*categories/albums*/
 
-    #albums, #categories {
-        padding: 0 1.250em 0 1.250em;
-
-    }
 
     #albums h3, #categories h3 {
         text-transform: uppercase;
         font-weight: 400;
+        margin: 0 1.250em 0 1.250em;
     }
 
     nav ul {
         list-style-type: none;
+        width: 100%;
     }
 
     nav li {
@@ -185,3 +183,19 @@
 /*CHANGING STATE*/
 
     /*HOVERS*/
+
+    nav li  {
+        transition-property: background-color, border, padding, color;
+        transition-duration: .5s;
+    }
+
+    nav li:hover {
+        padding-left: 1em;
+        background-color: #19181e ;
+        border-left: solid #ea5a5a .2em ;
+        color: #ffffff;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
